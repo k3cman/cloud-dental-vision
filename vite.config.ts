@@ -5,6 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Base path is important for GitHub Pages project sites
+  // e.g. https://<user>.github.io/cloud-dental-vision/
+  base: process.env.BASE_PATH || "/",
   server: {
     host: "::",
     port: 8080,
